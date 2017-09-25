@@ -23,3 +23,12 @@ h1 {
     margin: auto;
     display: none;
 }
+/*4. Localization*/
+.lang {
+    display: none;
+}
+
+.lang.visible {
+    display: inline;
+    /* @todo: visibility? font-size? etc? */
+}
