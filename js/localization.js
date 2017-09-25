@@ -8,12 +8,11 @@ var radio = document.querySelectorAll("div#languages label input");
 
 for (var q = 0; q < radio.length; q++) {
     radio[q].onclick = function(){
-        var dell = document.getElementsByClassName('visible');
-        console.log(dell);
-        for (var j = 0; j < dell.length; j++) {
-            var invisible = dell[j];
+        var visibl = document.getElementsByClassName('visible');
+
+        for (var j = 0; j < visibl.length; j++) {
+            var invisible = visibl[j];
             invisible.classList.remove('visible');
-            console.log(j);
         }
 
         var currentLang = this.value;
@@ -27,8 +26,8 @@ for (var q = 0; q < radio.length; q++) {
     };
 }
 
-var $save = document.querySelector('html body input submit#save')
+var $save = document.querySelector('html body button.save')
 
 $save.addEventListener('click', function(){
-    alert("You choose " );
+    alert("You choose ");
 });
