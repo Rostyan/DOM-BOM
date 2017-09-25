@@ -1,3 +1,24 @@
+/*2. Parallax */
+
+h1 {
+    margin: 0;
+}
+
+.content {
+    background: blue;
+    height: 400px;
+}
+
+#parallax {
+    background: red;
+
+    background: url(http://www.verticalworld.net/school/programs/uploads/pics/program_108_1.jpg);
+    background-size: cover;
+    background-position-y: -150px;
+    height: 700px;
+}
+
+/*3. OSMessage */
 .download-message {
     margin: auto;
     display: none;
