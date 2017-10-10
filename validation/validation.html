@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dom&Bom work</title>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+<script src="validation.js"></script>
+<footer>
+<ul>
+    <li>  age should contains only numbers</li>
+    <li>(pass) "123"</li>
+    <li>(pass) "0"</li>
+    <li>(pass) "008946798576948567948576948756984756"</li>
+    <li>(failed) "test"</li>
+    <li>(failed) "-1"</li>
+    <li>(failed) " 0"</li>
+    <li>(failed) "10e5"</li>
+    <li>username should start from "user_" (<span style="color:red">*or start with any number of symbol '*' before 'user_'?</span>)</li>
+    <li>(pass) <span style="color:red">**user_**test</span></li>
+    <li>(pass) <span style="color:red">**user_**213kjasd</span></li>
+    <li>(pass) user_@gmail.com</li>
+    <li>(failed) john</li>
+    <li>(failed) _user_test</li>
+    <li>(failed) testuser_test</li>
+    <li>field date should contain current date (format MMM Do YY), for example Sep 25th 17</li>
+    <li>if data is not valid, alert message your data is invalid</li>
+</ul>
+</footer>
+</body>
+</html>
